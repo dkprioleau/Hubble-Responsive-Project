@@ -1,0 +1,155 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+body{ 
+    background:hsl(257, 40%, 49%);
+    background-image:url("desktop-background.svg");
+    background-repeat:no-repeat;
+    background-size:910px 600px;
+    padding:3em;
+
+}
+/*------------header---------------*/
+header img{ 
+    width:200px;
+    margin-bottom: 3em;
+    margin-left:3em;
+}
+/*------------main---------------*/
+main{ 
+    display:flex;
+    justify-content:space-evenly;
+
+}
+
+main img{ 
+    width:500px;
+}
+
+section{
+    color:white;
+    flex-basis:450px;
+    margin-top:2em;
+    
+}
+
+button{ 
+    padding:10px 50px;
+    border:1px solid white;
+    border-radius:20px;
+    font-family:"open sans", sans serif;
+    margin-top:2em;
+    color:hsl(257, 40%, 49%);
+    box-shadow:5px 5px rgba(0, 0, 0,0.5);/*last number is for alpha transparency*/
+}
+
+button:hover{ 
+background:hsl(300, 69%, 71%);
+color:white;
+border:1px solid hsl(300, 69%, 71%);;
+
+}
+
+h2{
+    font-family:Poppins, sans serif;
+    margin-bottom:1em;
+
+}
+
+p{ 
+    font-family:"open sans", sans serif;
+
+}
+/*------------footer---------------*/
+footer{ 
+   display:flex;
+   justify-content:flex-end;
+   margin-right:4em;
+}
+
+i{ 
+    height:20px;
+    border:2px solid white;
+    border-radius:50%;
+    padding:10px;
+    margin:3px;
+    color:white;
+  
+}
+
+i:hover{ 
+   color:hsl(300, 69%, 71%);
+   border:2px solid hsl(300, 69%, 71%);
+
+
+}
+
+.fa-facebook-f{ /*fix the facebook icon*/
+    padding-left:15px;
+    padding-right:15px;
+}
+
+
+/*--------------------mobile size----------------------------------------*/
+
+@media (max-width:375px){
+/*max-width means the specified height and lower!!!*/
+
+body{ 
+   background-image:url("mobile-background.svg");
+    background-repeat:no-repeat;
+    background-size:auto 375px;
+}
+/*-----------header------*/ 
+header img{ 
+    width:100px;
+    margin-left:5px;
+   
+}
+
+/*------------main---------*/
+main{
+    flex-direction:column;
+    text-align:center;
+    
+}
+
+main img{
+    width:17em;
+    margin:2em auto;
+}
+
+section{ 
+    width:230px;
+}
+
+h2{
+    font-size:15px;
+}
+
+p{ 
+    
+    font-size:12px;
+}
+
+/*-------------footer-------*/
+
+button{ 
+    padding:10px 70px;
+    border:1px solid white;
+    border-radius:20px;
+}
+
+footer{ 
+   margin-right:5em;
+    margin-top:-10em;
+}
+
+i:active{ 
+    color:hsl(300, 69%, 71%);
+    border:2px solid hsl(300, 69%, 71%); 
+ }
+}
